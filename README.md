@@ -20,7 +20,7 @@ Finland, within the project
 | Realistic travel matrices | Distances and durations from the OpenRouteService Matrix API on the `driving-hgv` profile, so results follow the road network and HGV restrictions rather than straight-line distance. |
 | CO₂ emission reporting | Per-segment emissions using load-dependent factors by truck type. |
 | Freshness reporting | Per-container quality-deterioration cost from category-specific hourly penalty rates. |
-| Bulk import | CSV import of jobs and fleet for industrial-scale instances. |
+| Bulk import | CSV import of jobs and vehicles. |
 | Exports | Route plan and emission report as CSV. |
 
 ---
@@ -126,7 +126,7 @@ Press `Ctrl+C` to stop following the logs; the application continues running.
 
 ### 5. Create an account
 
-Open **[http://localhost:8000/signup/](http://localhost:8000/signup/)** and
+Open `http://localhost:8000/signup/` and
 register an account. Use the configured port if you changed `HOST_PORT`.
 
 To prepare your first routing task:
@@ -168,19 +168,17 @@ The second command checks the schema and solves a small local test problem.
 ## Video Tutorial
 
 A complete step-by-step video tutorial for installation and implementation of RouteShaper is available here:
-[Tutorial Link](https://youtu.be/V_FPSygpemU).
+[Tutorial Link](https://youtu.be/cLnHZzfpSdo).
 
 ---
 
 ## Limitations
 
-- The OpenRouteService free tier caps matrix size and daily requests; large
-  instances need a paid plan or a self-hosted ORS instance. One solve consumes
+- OpenRouteService imposes matrix-size and request limits. Larger instances may require a self-hosted ORS backend and additional endpoint configuration. One solve consumes
   one matrix request.
 - Travel times are ORS estimates and exclude traffic, driver breaks and delays
   beyond the configured service time.
-- Freshness penalties are reported but not optimized, and are not stable
-  across solver runs.
+- Freshness penalties are reported but not optimized; values may vary between runs because the solver can produce different routes.
 - Emission factors are European diesel HGV defaults; other fleets require
   substituting the factor table.
 
