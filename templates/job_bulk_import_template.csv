@@ -1,0 +1,4 @@
+name,category_id,lat,lng,job_type,demand,duration,start_at,end_at,created_by_id,multi_id
+Seinajoki_Delivery01,1,62.802227,22.872627,dd,1,90,2023-06-05T04:32:00.000Z,2023-06-05T20:59:00.000Z,1,
+Seinajoki_Delivery02,1,62.793752,22.883957,dd,1,90,2023-06-05T06:08:00.000Z,2023-06-05T20:59:00.000Z,1,
+Seinajoki_Delivery03,1,62.784961,22.840355,dd,1,90,2023-06-05T05:58:00.000Z,2023-06-05T20:59:00.000Z,1,

@@ -1,0 +1,15 @@
+RouteShaper
+Copyright 2024–2026 Petri Helo and Riaz Mahmud.
+Licensed under the Apache License, Version 2.0.
+
+This distribution includes the VRP solver by Ilya Builuk:
+https://github.com/reinterpretcat/vrp
+Release: v1.24.0
+Source commit: 8135ff79f19028cab5fbd56ec149fc72b58ae12e
+License: Apache License, Version 2.0.
+
+The solver source and its original license are included in
+docker/vendor/vrp-1.24.0.tar.gz. Its SHA-256 is:
+8e245a626ff3f0b35eb2e9311111e9e122b50985b9bf403042f25d113a541a03
+
+docker/solver.Cargo.lock records the dependency resolution for that source.

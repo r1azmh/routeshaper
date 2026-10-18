@@ -1,0 +1,14 @@
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");*/
+
+/*.leaflet-container{*/
+/*  height: 100vh;*/
+/*}*/
+
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+/*@import "tw-animate-css";*/
